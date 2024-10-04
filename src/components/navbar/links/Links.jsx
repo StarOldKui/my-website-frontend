@@ -24,7 +24,7 @@ const Links = () => {
                 links.map(
                     (
                         link => (
-                            <NavLink />
+                            <NavLink item={link} key={link.title} />
                         )
                     )
                 )

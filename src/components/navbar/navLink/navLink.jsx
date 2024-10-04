@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 const NavLink = ({item}) => {
   return (
-    <div>ComponentName</div>
+    <Link href={item.path} key={item.title}>{item.title}</Link>
   );
 };
 
