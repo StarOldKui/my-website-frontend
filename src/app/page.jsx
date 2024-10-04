@@ -19,19 +19,22 @@ export default function Home() {
 
       {/* Graduation Photo and Graduation Information */}
       <div className={styles.card}>
-        <div className={styles.profileSection}>
-          <Image 
-            src="/782e7fcf5171ff82b56daefb1b70519.jpg" 
-            alt="Graduation Photo" 
-            width={300} 
-            height={300} 
-            className={styles.imgGraduation} />
-          <div className={styles.graduationInfo}>
-            <p>I graduated from the University of Melbourne with a major in Computer Systems and Software Engineering, with a solid foundation in computer science.</p>
-            <p>Graduation Date: December 2019</p>
-          </div>
-        </div>
-      </div>
+  <div className={styles.profileSection}>
+    <Image 
+      src="/782e7fcf5171ff82b56daefb1b70519.jpg" 
+      alt="Graduation Photo" 
+      layout="responsive" /* Dynamically adjust the image size */
+      width={500} /* Provide a width value */
+      height={500} /* Provide a height value (same aspect ratio) */
+      className={styles.imgGraduation} 
+    />
+    <div className={styles.graduationInfo}>
+      <p>I graduated from the University of Melbourne with a major in Computer Systems and Software Engineering, with a solid foundation in computer science.</p>
+      <p>Graduation Date: December 2019</p>
+    </div>
+  </div>
+</div>
+
 
       {/* Life Photos */}
       <div className={styles.lifePhotosSection}>
@@ -52,10 +55,10 @@ export default function Home() {
       {/* Contact Information */}
       {/* Important Buttons: Resume and Contact */}
       <div className={styles.buttons}>
-          <a href="/your-resume.pdf" className={styles.button} download>
-            Download My Resume
-          </a>
-        </div>
+        <a href="/your-resume.pdf" className={styles.button} download>
+          Download My Resume
+        </a>
+      </div>
 
       <div className={styles.contact}>
         <h2>Contact Me</h2>
