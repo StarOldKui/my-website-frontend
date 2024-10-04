@@ -9,3 +9,7 @@
     font-size: 30px;
     font-weight: bold;
 }
+
+.highlight {
+    color: #00ff85; /* The green color (or any color you want) */
+  }
