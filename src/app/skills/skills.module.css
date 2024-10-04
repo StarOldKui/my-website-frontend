@@ -1,0 +1,87 @@
+.skillsContainer {
+    display: grid;
+    grid-template-columns: 1fr; /* 确保每一行只有一个卡片 */
+    gap: 30px;
+    padding: 60px 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* 设置最大宽度 */
+}
+
+.card {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 220px;
+    width: 100%; /* 占据容器的整个宽度 */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    animation: rotate 6s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.cardTitle {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.skillsList {
+    list-style: none;
+    padding: 0;
+}
+
+.skillItem {
+    margin: 5px 0;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.skillItem:hover {
+    color: #ffeb3b;
+    cursor: pointer;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 10%);
+    background-size: 50px 50px;
+    animation: animateBackground 8s linear infinite;
+}
+
+@keyframes animateBackground {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        transform: translateX(50px) translateY(50px);
+    }
+}
