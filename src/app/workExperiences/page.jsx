@@ -3,26 +3,21 @@ import { useState } from 'react';
 import styles from './workexperiences.module.css';
 
 const experiences = [
-  {
-    company: "PwC",
-    logo: "logo-pwc.png",
-    position: "Cloud Engineer",
-    time: "June 2021 - Present",
-    description: "Leading cloud-native development, AWS architecture design, and machine learning integration with Quarkus and Langchain.",
-    companyInfo: "PwC is a multinational professional services network with offices in 157 countries, providing industry-focused services in audit and assurance, consulting, and tax.",
-    listed: true,
-  },
-  {
-    company: "Wuhan Jindou Medical Data Technology",
-    logo: "logo-kindo.png",
-    position: "Software Engineer",
-    time: "March 2020 - June 2021",
-    description: "Developed scalable systems for medical data analysis, optimized MySQL databases, and enhanced backend processes using Java.",
-    companyInfo: "Wuhaaaassaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaan Jindou Medical Data Technology focuses on healthcare data solutions, improving medical processes through data analytics.",
-    listed: false,
-  },
-];
-
+    {
+      company: "PwC",
+      logo: "logo-pwc.png",
+      position: "Cloud Engineer",
+      time: "June 2021 - June 2024",
+      description: "Led cloud-native development, AI integration, and AWS architecture design at PwC.",
+    },
+    {
+      company: "Kindo",
+      logo: "logo-kindo.png",
+      position: "Software Engineer",
+      time: "March 2020 - June 2021",
+      description: "Developed scalable medical data systems.",
+    },
+  ];
 const WorkExperiences = () => {
   const [currentExperienceIndex, setCurrentExperienceIndex] = useState(0);
 
@@ -47,10 +42,6 @@ const WorkExperiences = () => {
           <div className={styles.companyHeader}>
             <div className={styles.companyDetails}>
               <h2 className={styles.company}>{currentExperience.company}</h2>
-              <p className={styles.companyInfo}>{currentExperience.companyInfo}</p>
-              <p className={styles.listed}>
-                {currentExperience.listed ? "Publicly Listed" : "Private Company"}
-              </p>
             </div>
           </div>
           <h3 className={styles.position}>{currentExperience.position}</h3>

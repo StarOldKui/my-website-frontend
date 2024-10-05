@@ -1,13 +1,15 @@
+/* skills.module.css */
 .skillsContainer {
-    display: grid;
-    grid-template-columns: 1fr; /* 确保每一行只有一个卡片 */
-    gap: 30px;
+    column-count: 2; /* 瀑布流布局：两列 */
+    column-gap: 20px;
     padding: 60px 20px;
     margin: 0 auto;
-    max-width: 1200px; /* 设置最大宽度 */
-}
-
-.card {
+    max-width: 1200px;
+  }
+  
+  .card {
+    break-inside: avoid; /* 防止卡片跨列 */
+    margin-bottom: 20px;
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     border-radius: 10px;
     padding: 20px;
@@ -18,54 +20,86 @@
     position: relative;
     overflow: hidden;
     min-height: 220px;
-    width: 100%; /* 占据容器的整个宽度 */
-}
-
-.card:hover {
+  }
+  
+  .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
-}
-
-.icon {
+  }
+  
+  .icon {
     font-size: 40px;
     margin-bottom: 15px;
     animation: rotate 6s infinite linear;
-}
-
-@keyframes rotate {
+  }
+  
+  .icon:hover {
+    transform: scale(1.2) rotate(360deg);
+  }
+  
+  @keyframes rotate {
     0% {
-        transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     100% {
-        transform: rotate(360deg);
+      transform: rotate(360deg);
     }
-}
-
-.cardTitle {
+  }
+  
+  .cardTitle {
     margin-bottom: 10px;
     font-size: 24px;
     font-weight: bold;
     position: relative;
     z-index: 1;
-}
-
-.skillsList {
+    background: white;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .skillsList {
     list-style: none;
     padding: 0;
-}
-
-.skillItem {
-    margin: 5px 0;
+  }
+  
+  .skillItem {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 5px 8px;
     font-size: 16px;
-    transition: color 0.3s ease-in-out;
-}
-
-.skillItem:hover {
-    color: #ffeb3b;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .skillItem:hover {
+    background-color: #ffeb3b;
+    color: black;
+    transform: scale(1.1);
     cursor: pointer;
-}
-
-.card::before {
+  }
+  
+  .card1 {
+    background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  }
+  
+  .card2 {
+    background: linear-gradient(135deg, #66bb6a, #43a047);
+  }
+  
+  .card3 {
+    background: linear-gradient(135deg, #ef5350, #e53935);
+  }
+  
+  .card4 {
+    background: linear-gradient(135deg, #ffa726, #fb8c00);
+  }
+  
+  .card5 {
+    background: linear-gradient(135deg, #ab47bc, #8e24aa);
+  }
+  
+  .card::before {
     content: '';
     position: absolute;
     top: -50%;
@@ -75,13 +109,14 @@
     background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 10%);
     background-size: 50px 50px;
     animation: animateBackground 8s linear infinite;
-}
-
-@keyframes animateBackground {
+  }
+  
+  @keyframes animateBackground {
     0% {
-        transform: translateX(0) translateY(0);
+      transform: translateX(0) translateY(0);
     }
     100% {
-        transform: translateX(50px) translateY(50px);
+      transform: translateX(50px) translateY(50px);
     }
-}
+  }
+  

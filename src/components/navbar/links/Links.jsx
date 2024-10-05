@@ -11,11 +11,11 @@ const links = [
         path: "/",
     },
     {
-        title: "Skills",
+        title: "My Skills",
         path: "/skills",
     },
     {
-        title: "Work Experiences",
+        title: "My Work Experiences",
         path: "/workExperiences",
     },
 ];

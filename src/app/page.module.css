@@ -164,6 +164,34 @@ a.secondary {
   }
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #ffffff; 
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1); 
+  padding: 30px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.personalIntro p {
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
 .profileSection {
   display: flex;
   align-items: center;
@@ -173,23 +201,35 @@ a.secondary {
 
 .imgGraduation {
   border-radius: 10px;
-  width: 50%; /* Restrict the image width to 50% */
-  max-width: 500px; /* Max width for image */
+  width: 60%; /* Adjust the image width */
+  max-width: 600px; /* Max width for image */
   height: auto;
   object-fit: cover;
 }
 
 .graduationInfo {
-  width: 50%; /* Set width for text */
+  width: 40%; /* Set width for text */
   max-width: 500px; /* Max width for the text container */
   color: #e0e0e0;
   text-align: left;
+  font-size: 1.2rem; /* Increase font size */
+  line-height: 1.6; /* Improve line spacing for readability */
+  padding: 10px 20px; /* Add padding for breathing room */
 }
+
+.graduationInfo p {
+  margin-bottom: 15px; /* Add spacing between paragraphs */
+}
+
+.graduationInfo strong {
+  font-weight: bold; /* Emphasize key points */
+}
+
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .profileSection {
-    flex-direction: column; /* Stack the image and text vertically on smaller screens */
+    flex-direction: column; /* Stack the image and text vertically */
     text-align: center; /* Center the text */
   }
 
@@ -199,46 +239,6 @@ a.secondary {
     text-align: center; /* Center text on smaller screens */
   }
 }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
-
-.title {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  color: #ffffff; 
-}
-
-.card {
-  background-color: rgba(255, 255, 255, 0.1); 
-  padding: 20px;
-  margin-bottom: 40px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.img {
-  border-radius: 10px;
-  width: 250px;
-  height: auto; 
-  object-fit: contain; 
-  max-width: 100%; 
-}
-
-.personalIntro {
-  display: flex;
-  flex-direction: column; /* Aligns p elements vertically */
-  justify-content: center; /* Centers the text vertically */
-  align-items: center; /* Centers the text horizontally */
-  text-align: center; /* Centers the text itself */
-  height: 100%; /* Ensure it takes up the full height of the parent */
-}
-
-
 
 .lifePhotosSection {
   margin-bottom: 40px;
@@ -258,16 +258,17 @@ a.secondary {
 }
 
 .buttons {
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .button {
   background-color: #0070f3;
   color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 12px 24px;
+  border-radius: 15px;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 15px;
   transition: background-color 0.3s ease;
 }
 
@@ -276,14 +277,19 @@ a.secondary {
 }
 
 .contact {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .contact a {
   color: #0070f3;
   text-decoration: none;
+  font-size: 1.1rem;
 }
 
 .contact a:hover {
   text-decoration: underline;
+}
+
+.highlight {
+  color: #007bff; /* 蓝色高亮 */
 }
