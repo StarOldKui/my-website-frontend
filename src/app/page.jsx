@@ -6,8 +6,8 @@ export default function Home() {
     <div className={styles.container}>
       {/* Homepage Title */}
       <h1 className={styles.title}>
-  I'm <span className={styles.highlight}>Backend</span> Engineer | <span className={styles.highlight}>Cloud</span> Engineer
-</h1>
+        I&apos;m <span className={styles.highlight}>Backend</span> Engineer | <span className={styles.highlight}>Cloud</span> Engineer
+      </h1>
 
       {/* Career and Personal Introduction */}
       <h2 className={styles.sectionTitle}>About Me</h2>
@@ -60,11 +60,11 @@ export default function Home() {
       {/* Contact Information */}
 
       <div className={styles.contact}>
-  <h2>Contact Me</h2>
-  <p>Email: <a href="mailto:staroldkui@gmail.com" target="_blank" rel="noopener noreferrer">staroldkui@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/alen-xia-469600293/" target="_blank" rel="noopener noreferrer">Alen Xia</a></p>
-  <p>GitHub: <a href="https://github.com/StarOldKui" target="_blank" rel="noopener noreferrer">My GitHub</a></p>
-</div>
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:staroldkui@gmail.com" target="_blank" rel="noopener noreferrer">staroldkui@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/alen-xia-469600293/" target="_blank" rel="noopener noreferrer">Alen Xia</a></p>
+        <p>GitHub: <a href="https://github.com/StarOldKui" target="_blank" rel="noopener noreferrer">My GitHub</a></p>
+      </div>
 
       <div className={styles.buttons}>
         <a href="/Alen_Xia_Software_Engineer_Resume.pdf" className={styles.button} download>
