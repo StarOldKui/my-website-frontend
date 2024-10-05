@@ -1,0 +1,164 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+    padding: 6rem 2rem;
+    position: relative;
+  }
+  
+  .projectCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    gap: 2rem;
+  }
+  
+  .projectInfo {
+    flex: 1;
+  }
+  
+  .companyHeader {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  .companyDetails {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .company {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .companyInfo {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 0.5rem;
+  }
+  
+  .listed {
+    font-size: 1rem;
+    color: #00ff99;
+  }
+  
+  .position {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  .time {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+  }
+  
+  .projectDescription {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 1rem;
+  }
+  
+  .projectImage {
+    position: relative;
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* 时间轴样式 */
+  .timelineContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 10px; /* 与 .projectCard 保持 30px 的间距 */
+  }
+  
+  
+  .timelineItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .timelineCircle {
+    width: 12px;
+    height: 12px;
+    background-color: #00ff99;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .timelineText {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .active {
+    background-color: #007bff; /* 高亮的蓝色 */
+  }
+  
+  .activeText {
+    color: #007bff; /* 高亮的蓝色 */
+  }
+  
+  .carouselControls {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    bottom: 50px;
+  }
+  
+  .carouselButton {
+    background-color: #00ff99;
+    border: none;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .carouselButton:hover {
+    background-color: #00cc77;
+  }
+  
+  @media (max-width: 768px) {
+    .projectCard {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image {
+      max-width: 100%;
+      margin-top: 1.5rem;
+    }
+  
+    .timelineContainer {
+      bottom: 50px;
+    }
+  }
+  
