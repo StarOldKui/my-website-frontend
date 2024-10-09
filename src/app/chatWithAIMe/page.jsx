@@ -56,7 +56,8 @@ const ChatWithAIMe = () => {
         <div className={styles.chatPage}>
             <div className={styles.introMessage}>
                 <p>👋 Welcome to the AI chat interaction! Feel free to ask me anything about myself.</p>
-                <p>For example, you can ask about my visa status, personal background, lifestyle, and work situation. My AI counterpart will try to answer any questions related to my job search. 😊🤖</p>
+                <p>For example, you can ask about my visa status, personal background, lifestyle, and work situation.</p>
+                <p> My intelligent persona 🤖 will try to answer any questions related to my job search. 😊</p>
                 <p>Example question 1: Could you tell me about your background?</p>
                 <p>Example question 2: What&apos;s your notice period?</p>
             </div>
