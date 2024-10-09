@@ -11,6 +11,10 @@ const links = [
         path: "/",
     },
     {
+        title: "Chat with AI Me",
+        path: "/chatWithAIMe",
+    },
+    {
         title: "My Skills",
         path: "/skills",
     },

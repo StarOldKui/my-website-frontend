@@ -1,0 +1,78 @@
+.chatPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .introMessage {
+    width: 100%;
+    max-width: 1200px;
+    background-color: var(--bgSoft);
+    color: var(--textSoft);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center; /* 文字居中对齐 */
+  }
+  
+  .chatContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    background-color: var(--bgSoft);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .chatMessages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding-right: 10px;
+  }
+  
+  .messageCard {
+    background-color: var(--bg);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: var(--textSoft);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 75%;
+  }
+  
+  .userMessage {
+    background-color: var(--btn);
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .chatInputArea {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .chatInput {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: var(--bg);
+    color: var(--text);
+  }
+  
+  .sendButton {
+    padding: 10px;
+    background-color: var(--btn);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
