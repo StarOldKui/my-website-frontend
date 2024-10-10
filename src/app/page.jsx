@@ -6,7 +6,7 @@ export default function Home() {
     <div className={styles.container}>
       {/* Homepage Title */}
       <h1 className={styles.title}>
-        I&apos;m <span className={styles.highlight}>Backend</span> Engineer | <span className={styles.highlight}>Cloud</span> Engineer
+        <span className={styles.highlight}>Backend</span> Engineer | <span className={styles.highlight}>Cloud</span> Engineer
       </h1>
 
       {/* Career and Personal Introduction */}

@@ -11,7 +11,7 @@ const links = [
         path: "/",
     },
     {
-        title: "Chat with AI Me",
+        title: "Chat With AI Me",
         path: "/chatWithAIMe",
     },
     {
@@ -22,6 +22,10 @@ const links = [
         title: "My Work Experiences",
         path: "/workExperiences",
     },
+    {
+        title: "About This Site",
+        path: "/aboutThisSite"
+    }
 ];
 
 
