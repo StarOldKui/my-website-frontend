@@ -6,7 +6,7 @@ export default function Home() {
     <div className={styles.container}>
       {/* Homepage Title */}
       <h1 className={styles.title}>
-        <span className={styles.highlight}>Backend</span> Engineer | <span className={styles.highlight}>Cloud</span> Engineer
+        <span className={styles.highlight}>Cloud</span> Engineer | <span className={styles.highlight}>AI</span> Engineer
       </h1>
 
       {/* Career and Personal Introduction */}
@@ -19,6 +19,14 @@ export default function Home() {
             <p>Extensive experience working in English-speaking, multinational teams, with a strong ability to collaborate effectively with global colleagues. Well-versed in Agile development.</p>
             <p>Proficient in Java and Python, and passionate about exploring and applying new technologies.</p>
           </div>
+        </div>
+      </div>
+
+      {/* Where I Currently Live */}
+      <h2 className={styles.sectionTitle}>Where I Currently Live</h2>
+      <div className={styles.card}>
+        <div className={styles.profileSection}>
+          <p>I currently live at 100 Lorimer St, Docklands VIC 3008, Melbourne.</p>
         </div>
       </div>
 
