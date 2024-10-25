@@ -15,11 +15,11 @@ const links = [
         path: "/chatWithAIMe",
     },
     {
-        title: "My Skills",
+        title: "Skills",
         path: "/skills",
     },
     {
-        title: "My Work Experiences",
+        title: "Experiences",
         path: "/workExperiences",
     },
     {

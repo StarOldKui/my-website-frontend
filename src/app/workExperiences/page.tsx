@@ -1,7 +1,9 @@
 "use client"
-import { useState } from 'react';
 import styles from './workexperiences.module.css';
 import dynamic from "next/dynamic";
+import { Timeline } from "@/components/ui/timeline";
+import Image from "next/image";
+
 
 const World = dynamic(() => import("@/components/ui/globe").then((m) => m.World), {
   ssr: false,
@@ -393,77 +395,86 @@ const sampleArcs = [
   },
 ];
 
-const experiences = [
-    {
-      company: "PwC",
-      logo: "logo-pwc.png",
-      position: "Cloud Engineer",
-      time: "June 2021 - June 2024",
-      description: "Led cloud-native development, AI integration, and AWS architecture design at PwC.",
-    },
-    {
-      company: "Kindo",
-      logo: "logo-kindo.png",
-      position: "Software Engineer",
-      time: "March 2020 - June 2021",
-      description: "Developed scalable medical data systems.",
-    },
-  ];
+const data = [
+  {
+    title: "2024 - 2021",
+    content: (
+      <div>
+        <strong className="text-lg font-bold text-teal-400">SENIOR CLOUD ENGINEER</strong> <br />
+        <div><strong>PwC</strong></div>
+        <p className="mt-4">
+          Led end-to-end cloud-native architecture design, collaborating with global teams to deliver cutting-edge cloud and AI solutions.
+        </p>
+        <p className="mt-4">
+          <strong>Tech Stacks:</strong> Java, Python, FastAPI, LangChain, LangGraph, LangSmith, Pinecone, Quarkus, GraalVM, AWS, Azure, Docker, Kubernetes, Hibernate, Querydsl, MySQL, Oracle, PostgreSQL, Redis, Flyway, Maven, Groovy Scripts, Spock, Git, OpenAPI.
+        </p>
+        <div className="mt-6">
+          <strong>Key Achievements:</strong>
+          <ul className="list-disc list-inside mt-2">
+            <li>Led the design and development of cloud-native applications, including AWS architecture and machine learning integration.</li>
+            <li>Developed innovative Generative AI solutions using LangGraph, AWS Lambda, Azure Functions, and SageMaker, optimizing system performance and building intelligent chatbots.</li>
+            <li>Built and deployed Java-based cloud-native web applications using Quarkus and GraalVM for native image generation, in collaboration with a cross-timezone team.</li>
+            <li>Spearheaded the migration of enterprise infrastructure to AWS, setting up key cloud resources such as VPC, databases, and containerized applications.</li>
+            <li>Successfully delivered multiple project milestones, including implementing cutting-edge generative AI technologies, consistently exceeding project expectations.</li>
+          </ul>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "2021 – 2020",
+    content: (
+      <div>
+        <strong className="text-lg font-bold text-teal-400">JAVA DEVELOPER</strong> <br />
+        <div><strong>Kindo</strong></div>
+        <p className="mt-4">
+          Built scalable medical data systems and ensured system stability across key hospital networks.
+        </p>
+
+        <div className="mt-6">
+          <strong>Tech Stacks:</strong>
+          <p className="mt-2">
+            Java, Spring Boot, Spring MVC, Maven, MyBatis, MySQL, JUnit, Git, Linux, Tomcat, Nginx.
+          </p>
+        </div>
+
+        <div className="mt-6">
+          <strong>Key Achievements:</strong>
+          <ul className="list-disc list-inside mt-2">
+            <li>Developed scalable medical data analysis systems using Java and the Spring Boot framework.</li>
+            <li>Deployed and maintained systems on-site, ensuring smooth operation and performance optimization at major hospitals.</li>
+            <li>Optimized core system code for enhanced stability and performance, reducing downtime and improving system efficiency.</li>
+          </ul>
+        </div>
+      </div>
+
+    ),
+  },
+  {
+    title: "2019 – 2016",
+    content: (
+      <div>
+        <strong className="text-lg font-bold text-teal-400">BACHELOR OF SCIENCE</strong> <br />
+        <div><strong>University of Melbourne</strong></div>
+        <div className="mt-6">
+          <strong>Major:</strong>
+          <p className="mt-2">
+            Computing and Software Systems
+          </p>
+        </div>
+      </div>
+    ),
+  },
+];
+
+
 const WorkExperiences = () => {
-  const [currentExperienceIndex, setCurrentExperienceIndex] = useState(0);
-
-  const handlePrevClick = () => {
-    setCurrentExperienceIndex((prevIndex) => 
-      prevIndex === 0 ? experiences.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNextClick = () => {
-    setCurrentExperienceIndex((prevIndex) => 
-      prevIndex === experiences.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const currentExperience = experiences[currentExperienceIndex];
-
   return (
     <div className={styles.container}>
-      <World data={sampleArcs} globeConfig={globeConfig} />
-      <div className={styles.projectCard}>
-        <div className={styles.projectInfo}>
-          <div className={styles.companyHeader}>
-            <div className={styles.companyDetails}>
-              <h2 className={styles.company}>{currentExperience.company}</h2>
-            </div>
-          </div>
-          <h3 className={styles.position}>{currentExperience.position}</h3>
-          <p className={styles.time}>{currentExperience.time}</p>
-          <p className={styles.projectDescription}>{currentExperience.description}</p>
-        </div>
-
-        <div className={styles.projectImage}>
-          <img
-            src={currentExperience.logo}
-            alt={`${currentExperience.company} logo`}
-            className={styles.image}
-          />
-        </div>
+      <div style={{ width: '100%', height: '500px' }}>
+        <World data={sampleArcs} globeConfig={globeConfig} />
       </div>
-
-      {/* 时间轴 */}
-      <div className={styles.timelineContainer}>
-        {experiences.map((experience, index) => (
-          <div key={index} className={styles.timelineItem}>
-            <div className={`${styles.timelineCircle} ${currentExperienceIndex === index ? styles.active : ''}`}></div>
-            <p className={`${styles.timelineText} ${currentExperienceIndex === index ? styles.activeText : ''}`}>{experience.time}</p>
-          </div>
-        ))}
-      </div>
-
-      <div className={styles.carouselControls}>
-        <button onClick={handlePrevClick} className={styles.carouselButton}>{"<"}</button>
-        <button onClick={handleNextClick} className={styles.carouselButton}>{">"}</button>
-      </div>
+      <Timeline data={data} />
     </div>
   );
 };
