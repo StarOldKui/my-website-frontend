@@ -61,3 +61,7 @@ a {
     width: 475px;
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
