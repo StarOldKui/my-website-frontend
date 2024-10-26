@@ -75,6 +75,22 @@ const Skills = () => {
             ],
             icon: "☁️",
         },
+        {
+            category: "Dev Tools & Project Management",
+            skills: [
+                "IntelliJ IDEA",
+                "PyCharm",
+                "VS Code",
+                "GitHub",
+                "GitLab",
+                "Jira",
+                "Confluence",
+                "Teams",
+                "Agile",
+                "Eraser",
+            ],
+            icon: "🛠️", // Wrench and notepad icon to represent dev tools and project management
+        },
     ];
 
     return (

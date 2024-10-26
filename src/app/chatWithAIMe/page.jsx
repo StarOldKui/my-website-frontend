@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import styles from "./chatwithaime.module.css";
+import { motion } from "framer-motion";
+import { LampContainer } from "@/components/ui/lamp";
 
 const ChatWithAIMe = () => {
     const [messages, setMessages] = useState([
@@ -54,13 +56,27 @@ const ChatWithAIMe = () => {
 
     return (
         <div className={styles.chatPage}>
-            <div className={styles.introMessage}>
+            <LampContainer>
+                <motion.h1
+                    initial={{ opacity: 0.5, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                        delay: 0,
+                        duration: 0.8,
+                        ease: "easeInOut",
+                    }}
+                    className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+                >
+                    Chat with AI Me
+                </motion.h1>
                 <p>👋 Welcome to the AI chat interaction! Feel free to ask me anything about myself.</p>
                 <p>For example, you can ask about my visa status, personal background, lifestyle, and work situation.</p>
                 <p> My intelligent persona 🤖 will try to answer any questions related to my job search. 😊</p>
                 <p>Example question 1: Could you tell me about your background?</p>
                 <p>Example question 2: What&apos;s your notice period?</p>
-            </div>
+            </LampContainer>
+
+            <br />
             <div className={styles.chatContainer}>
                 <div className={styles.chatMessages}>
                     {messages.map((msg, index) => (

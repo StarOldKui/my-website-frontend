@@ -470,11 +470,11 @@ const data = [
 
 const WorkExperiences = () => {
   return (
-    <div className={styles.container}>
-      <div style={{ width: '100%', height: '500px' }}>
+    <div>
+      <Timeline data={data} />
+      <div style={{ width: '100%', height: '600px' }}>
         <World data={sampleArcs} globeConfig={globeConfig} />
       </div>
-      <Timeline data={data} />
     </div>
   );
 };

@@ -1,29 +1,27 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
+import { motion } from "framer-motion";
+
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      {/* Homepage Title */}
-      <h1 className={styles.title}>
-        <span className={styles.highlight}>Cloud</span> Engineer | <span className={styles.highlight}>AI</span> Engineer
-      </h1>
-
       {/* Career and Personal Introduction */}
-      <h2 className={styles.sectionTitle}>About Me</h2>
+      <h2 className={styles.sectionTitle}>About Me</h2><br />
       <div className={styles.card}>
         <div className={styles.profileSection}>
           <div className={styles.personalIntro}>
-            <p>Backend developer and AWS DevOps specialist with over four years of experience in cloud-native and generative AI application development.</p>
-            <p>Extensive hands-on expertise with AWS platforms, holding multiple AWS cloud certifications.</p>
-            <p>Extensive experience working in English-speaking, multinational teams, with a strong ability to collaborate effectively with global colleagues. Well-versed in Agile development.</p>
-            <p>Proficient in Java and Python, and passionate about exploring and applying new technologies.</p>
+            <p><Highlight>Backend</Highlight> developer and <Highlight>DevOps</Highlight> specialist with 4+ years of experience delivering scalable, high-availability cloud-native applications and AI-driven solutions.</p>
+            <p>Proficient in <Highlight>Java</Highlight> and <Highlight>Python</Highlight>, with deep knowledge of distributed systems, microservices, and containerization.</p>
+            <p>Extensive hands-on expertise with <Highlight>AWS</Highlight> platforms, proven ability to design and automate CI/CD pipelines, and optimize cloud infrastructure, resulting in enhanced performance and significant cost savings.</p>
+            <p>Well-versed in <Highlight>Agile</Highlight> development. Strong collaboration and problem-solving skills, with the ability to effectively communicate complex technical concepts to both technical and non-technical stakeholders, and work seamlessly within cross-functional teams.</p>
           </div>
         </div>
       </div>
 
       {/* Where I Currently Live */}
-      <h2 className={styles.sectionTitle}>Where I Currently Live</h2>
+      <h2 className={styles.sectionTitle}>Where I Currently Live</h2><br />
       <div className={styles.card}>
         <div className={styles.profileSection}>
           <p>I currently live at 100 Lorimer St, Docklands VIC 3008, Melbourne.</p>
@@ -51,7 +49,7 @@ export default function Home() {
 
       {/* Life Photos */}
       <div className={styles.lifePhotosSection}>
-        <h2 className={styles.sectionTitle}>Life Photos</h2>
+        <h2 className={styles.sectionTitle}>Life Photos</h2><br />
         <div className={styles.imgSection}>
           <div className={styles.imgContainer}>
             <Image src="/76c7f2479998b759bd877f218f22482.jpg" alt="Life photo 1" width={300} height={300} />
@@ -68,7 +66,7 @@ export default function Home() {
       {/* Contact Information */}
 
       <div className={styles.contact}>
-        <h2>Contact Me</h2>
+        <h2>Contact Me</h2><br />
         <p>Email: <a href="mailto:staroldkui@gmail.com" target="_blank" rel="noopener noreferrer">staroldkui@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/alen-xia-469600293/" target="_blank" rel="noopener noreferrer">Alen Xia</a></p>
         <p>GitHub: <a href="https://github.com/StarOldKui" target="_blank" rel="noopener noreferrer">My GitHub</a></p>
