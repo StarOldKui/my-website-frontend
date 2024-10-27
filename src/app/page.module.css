@@ -169,6 +169,7 @@ a.secondary {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
+  padding-bottom: 5rem; /* Adjust the value as needed */
 }
 
 .title {
