@@ -11,7 +11,7 @@ const links = [
         path: "/",
     },
     {
-        title: "Chat With AI Me",
+        title: "Chat With My AI",
         path: "/chatWithAIMe",
     },
     {

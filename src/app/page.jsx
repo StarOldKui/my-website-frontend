@@ -12,10 +12,10 @@ export default function Home() {
       <div className={styles.card}>
         <div className={styles.profileSection}>
           <div className={styles.personalIntro}>
-            <p><Highlight>Backend</Highlight> developer and <Highlight>DevOps</Highlight> specialist with 4+ years of experience delivering scalable, high-availability cloud-native applications and AI-driven solutions.</p>
+            <p><Highlight>Backend developer</Highlight> and <Highlight>DevOps specialist</Highlight> with <Highlight>4+ years</Highlight> of experience delivering scalable, high-availability <Highlight>Cloud-Native</Highlight> and <Highlight>GenAI</Highlight> applications.</p>
             <p>Proficient in <Highlight>Java</Highlight> and <Highlight>Python</Highlight>, with deep knowledge of distributed systems, microservices, and containerization.</p>
-            <p>Extensive hands-on expertise with <Highlight>AWS</Highlight> platforms, proven ability to design and automate CI/CD pipelines, and optimize cloud infrastructure, resulting in enhanced performance and significant cost savings.</p>
-            <p>Well-versed in <Highlight>Agile</Highlight> development. Strong collaboration and problem-solving skills, with the ability to effectively communicate complex technical concepts to both technical and non-technical stakeholders, and work seamlessly within cross-functional teams.</p>
+            <p>Extensive hands-on expertise with <Highlight>AWS</Highlight>, with a proven track record in designing and automating <Highlight>CI/CD</Highlight> pipelines and optimizing cloud infrastructure to consistently enhance performance and achieve substantial cost savings.</p>
+            <p>Years of practical experience in <Highlight>Agile</Highlight> development. Skilled in collaboration, problem-solving, and clear communication with both technical and non-technical teams.</p>
           </div>
         </div>
       </div>
