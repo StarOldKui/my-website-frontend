@@ -5,7 +5,16 @@ import styles from "./chatwithaime.module.css";
 import { motion } from "framer-motion";
 import { LampContainer } from "@/components/ui/lamp";
 import { SparklesCore } from "@/components/ui/sparkles";
+import { TextHoverEffect } from "@/components/ui/text-hover-effect";
+import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 
+const words = [
+
+    {
+        text: "Virtually.",
+        className: "text-blue-500 dark:text-blue-500",
+    },
+];
 
 const ChatWithAIMe = () => {
     const [messages, setMessages] = useState([
@@ -58,12 +67,9 @@ const ChatWithAIMe = () => {
 
     return (
         <div className={styles.chatPage}>
-            <LampContainer>
-                <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
-                    Meet Me,<br /> Virtually
-                </h1>
-            </LampContainer>
-            <br />
+            <h1 className="lg:text-8xl font-bold">
+                Meet Me, <TypewriterEffectSmooth words={words} />
+            </h1>
             <p>👋 Welcome to the AI chat interaction! Feel free to ask me anything about myself.</p>
             <p>For example, you can ask about my visa status, personal background, lifestyle, and work situation.</p>
             <p>My intelligent persona 🤖 will try to answer any questions related to my job search. 😊</p>
