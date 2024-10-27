@@ -405,9 +405,15 @@ const data = [
         <p className="mt-4">
           Led end-to-end cloud-native architecture design, collaborating with global teams to deliver cutting-edge cloud and AI solutions.
         </p>
-        <p className="mt-4">
-          <strong>Tech Stacks:</strong> Java, Python, FastAPI, LangChain, LangGraph, LangSmith, Pinecone, Quarkus, GraalVM, AWS, Azure, Docker, Kubernetes, Hibernate, Querydsl, MySQL, Oracle, PostgreSQL, Redis, Flyway, Maven, Groovy Scripts, Spock, Git, OpenAPI.
+
+        <p className="mt-6">
+          <strong>Tech Stacks:</strong>
         </p>
+
+        <p className="mt-2">
+          Java, Python, FastAPI, LangChain, LangGraph, LangSmith, Pinecone, Quarkus, GraalVM, AWS, Azure, Docker, Kubernetes, Hibernate, Querydsl, MySQL, Oracle, PostgreSQL, Redis, Flyway, Maven, Groovy Scripts, Spock, Git, OpenAPI.
+        </p>
+
         <div className="mt-6">
           <strong>Key Achievements:</strong>
           <ul className="list-disc list-inside mt-2">
@@ -433,6 +439,7 @@ const data = [
 
         <div className="mt-6">
           <strong>Tech Stacks:</strong>
+
           <p className="mt-2">
             Java, Spring Boot, Spring MVC, Maven, MyBatis, MySQL, JUnit, Git, Linux, Tomcat, Nginx.
           </p>
