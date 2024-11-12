@@ -403,7 +403,7 @@ const data = [
         <strong className="text-lg font-bold text-teal-400">SENIOR CLOUD ENGINEER</strong> <br />
         <div><strong>PwC</strong></div>
         <p className="mt-4">
-          Led end-to-end cloud-native architecture design, collaborating with global teams to deliver cutting-edge cloud and AI solutions.
+          Led the design of end-to-end cloud-native architectures, collaborating with global teams to deliver cutting-edge cloud and AI solutions. Specialized in cloud-native application development, Generative AI solutions, and cloud migration projects on AWS platforms.
         </p>
 
         <p className="mt-6">
@@ -417,11 +417,16 @@ const data = [
         <div className="mt-6">
           <strong>Key Achievements:</strong>
           <ul className="list-disc list-inside mt-2">
-            <li>Led the design and development of cloud-native applications, including AWS architecture and machine learning integration.</li>
-            <li>Developed innovative Generative AI solutions using LangGraph, AWS Lambda, Azure Functions, and SageMaker, optimizing system performance and building intelligent chatbots.</li>
-            <li>Built and deployed Java-based cloud-native web applications using Quarkus and GraalVM for native image generation, in collaboration with a cross-timezone team.</li>
-            <li>Spearheaded the migration of enterprise infrastructure to AWS, setting up key cloud resources such as VPC, databases, and containerized applications.</li>
-            <li>Successfully delivered multiple project milestones, including implementing cutting-edge generative AI technologies, consistently exceeding project expectations.</li>
+            <li><strong className="text-lg font-bold text-teal-400">Developed multiple high-performance cloud-native applications</strong> using Java and its ecosystem, leveraging Quarkus and GraalVM for native image generation, and deployed them on AWS, significantly improving system scalability and efficiency.</li>
+            <li><strong className="text-lg font-bold text-teal-400">Built intelligent Generative AI chatbots</strong> using LangChain, LangGraph, and LangSmith. Mastered advanced AI techniques like prompt engineering and Retrieval-Augmented Generation (RAG), which improved user engagement and automated complex tasks.</li>
+            <li><strong className="text-lg font-bold text-teal-400">Improved database performance</strong> by optimizing SQL queries, tuning indexes, and enhancing systems in MySQL, resulting in faster query execution times and better resource utilization.</li>
+            <li><strong className="text-lg font-bold text-teal-400">Migrated multiple enterprise infrastructures to AWS,</strong> setting up essential resources like VPCs, EC2 instances, databases, containers, and CI/CD pipelines, streamlining operations and reducing infrastructure costs.</li>
+            <li><strong className="text-lg font-bold text-teal-400">Streamlined development processes</strong> by creating Maven Archetype templates and implementing code quality tools—such as integrating Google Checkstyle checks into the Maven lifecycle and adding Git pre-commit hooks for code submissions—improving code quality and reducing development time for the team.</li>
+            <li><strong className="text-lg font-bold text-teal-400">Promoted best practices in code development and DevOps</strong> through code reviews and documentation, enhancing overall team productivity and software quality.</li>
+            <li><strong className="text-lg font-bold text-teal-400">Collaborated effectively with global teams across different time zones,</strong> frequently working with teams in the United States and India. Participated in early morning internal meetings and evening international conferences daily, ensuring seamless project integration and delivery. Facilitated knowledge sharing among international colleagues.</li>
+            <li><strong className="text-lg font-bold text-teal-400">Guided junior developers and colleagues</strong> on code-related issues through video sessions and face-to-face meetings, helping them solve technical problems by explaining underlying principles and sharing problem-solving approaches. Regularly recommended new technologies to broaden the team&apos;s horizons, fostering a culture of continuous learning and improvement.</li>
+            <li><strong className="text-lg font-bold text-teal-400">Delivered projects ahead of schedule,</strong> receiving commendations from clients and stakeholders for exceeding expectations and demonstrating reliability.</li>
+            <li><strong className="text-lg font-bold text-teal-400">Adapted quickly to rapidly evolving technological environments,</strong> showcasing strong problem-solving skills by effectively integrating new technologies and methodologies into ongoing projects.</li>
           </ul>
         </div>
       </div>
@@ -434,7 +439,7 @@ const data = [
         <strong className="text-lg font-bold text-teal-400">JAVA DEVELOPER</strong> <br />
         <div><strong>Kindo</strong></div>
         <p className="mt-4">
-          Built scalable medical data systems and ensured system stability across key hospital networks.
+          Developed medical data systems using Java and Spring Boot, ensuring stability and high performance across hospital networks.
         </p>
 
         <div className="mt-6">
@@ -448,9 +453,9 @@ const data = [
         <div className="mt-6">
           <strong>Key Achievements:</strong>
           <ul className="list-disc list-inside mt-2">
-            <li>Developed scalable medical data analysis systems using Java and the Spring Boot framework.</li>
-            <li>Deployed and maintained systems on-site, ensuring smooth operation and performance optimization at major hospitals.</li>
-            <li>Optimized core system code for enhanced stability and performance, reducing downtime and improving system efficiency.</li>
+            <li><strong className="text-lg font-bold text-teal-400">Developed and enhanced medical data systems</strong> using Java, Spring Boot, and MyBatis, ensuring stability and functionality across hospital networks.</li>
+            <li><strong className="text-lg font-bold text-teal-400">Managed on-site deployments and maintenance</strong> at major hospitals, proficiently handling Linux servers, deploying applications via Tomcat, and configuring Nginx for optimal performance, ensuring smooth operation and high system reliability.</li>
+            <li><strong className="text-lg font-bold text-teal-400">Optimized core system code</strong> for enhanced stability and performance, reducing downtime and improving system efficiency.</li>
           </ul>
         </div>
       </div>

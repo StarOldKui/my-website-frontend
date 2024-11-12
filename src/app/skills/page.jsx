@@ -39,6 +39,10 @@ const Skills = () => {
                 "AWS DynamoDB",
                 "Quar",
                 "Redis",
+                "AWS Glue ETL",
+                "AWS Data Catalog Crawler",
+                "AWS Redshift",
+                "AWS Athena"
             ],
             icon: "⚙️",
         },
