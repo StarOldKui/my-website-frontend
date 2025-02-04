@@ -33,7 +33,7 @@ const ChatWithAIMe = () => {
         setLoading(true);
 
         try {
-            const response = await fetch("https://k4mkdiprt7cpjb6dbup5yi3qrq0hjpgc.lambda-url.us-east-2.on.aws/", {
+            const response = await fetch("https://w4rw4m5sk7ad6c3jdgu5riuxtm0kyems.lambda-url.us-east-2.on.aws/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
